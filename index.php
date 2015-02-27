@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Wobble Favourite Posts
-Description: Adds Likes/Favorites to Wordpress post.
+Plugin Name: Simple Featured post likes
+Description: Adds Likes/Favorites to Wordpress post or custom post type.
 Author: Richard Miles
-Version: 0
+Version: 1.0
 Author URI: http://richymiles.wordpress.com
 */
 
