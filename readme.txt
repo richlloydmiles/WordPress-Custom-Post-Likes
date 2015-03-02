@@ -38,3 +38,4 @@ The element that the box should be appended to as well as the post type to targe
 
 = 1.0 =
 * First Version, Basic Working copy
+* Fixed a few backend bugs, uses value now instead of placeholder
