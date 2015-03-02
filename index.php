@@ -77,16 +77,16 @@ add_action( 'wp_enqueue_scripts', 'enqueue_likes_scripts' );
 // 	// add_menu_page( 'Post Likes', 'Miles Dev', 'manage_options', 'post_likes/admin.php', '', '', 6 );
 // }
 
-add_action('admin_menu', 'my_plugin_menu');
+add_action('admin_menu', 'add_likes_menu');
 
-function my_plugin_menu() {
+function add_likes_menu() {
 	add_options_page('My Options', 'Favourite Posts', 'manage_options', plugin_dir_path( __FILE__ ) . 'admin.php');
 }
 
 
-add_action('wp_head','pluginname_ajaxurl');
+add_action('wp_head','simple_likes_ajaxurl');
 
-function pluginname_ajaxurl() {
+function simple_likes_ajaxurl() {
 ?>
 <script type="text/javascript">
 var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';

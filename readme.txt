@@ -1,4 +1,4 @@
-=== Simple Featured post likes ===
+=== Simple custom post likes ===
 Contributors: richymilo
 Donate link: http://wobble.co.za/
 Tags: custom post types, likes, featured

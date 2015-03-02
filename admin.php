@@ -16,7 +16,7 @@ $post_types = array_unique($post_types);
 <table class="form-table">
 	<tr>
 		<th scope="row"><label for="content_element">Select Element to append to</label></th>
-		<td><input type="text" name="content_element" placeholder="<?php if(get_option( 'favourates_element', 'post' )) {
+		<td><input id="content_element" type="text" name="content_element" value="<?php if(get_option( 'favourates_element' )) {
 			echo get_option( 'favourates_element' );
 			} ?>"></td>
 	</tr>
@@ -48,6 +48,12 @@ $post_types = array_unique($post_types);
 	if (isset($_POST['content_element'])) {
 		$type = $_POST['content_element'];
 			update_option( 'favourates_element', $type , '', 'yes' );
+			?>
+		<script>
+		jQuery(document).ready(function($) {
+			jQuery('#content_element').val("<?php echo $type; ?>");
+		});</script>
+			<?php
 	}
 ?>
 
