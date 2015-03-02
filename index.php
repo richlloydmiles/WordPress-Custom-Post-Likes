@@ -1,11 +1,12 @@
 <?php
-/*
-Plugin Name: Simple Featured post likes
-Description: Adds Likes/Favorites to Wordpress post or custom post type.
-Author: Richard Miles
-Version: 1.0
-Author URI: http://richymiles.wordpress.com
-*/
+/**
+ * Plugin Name: Simple Featured post likes
+ * Description: Adds Likes/Favorites to Wordpress post or custom post type.
+ * Author: Richard Miles
+ * Version: 1.0.1
+ * Author URI: http://richymiles.wordpress.com
+ */
+
 
 function get_users_array($post_id) {
     $new_array = array();
